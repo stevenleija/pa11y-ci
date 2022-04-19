@@ -15,7 +15,7 @@
   "bugs": "https://github.com/pa11y/ci/issues",
   "license": "LGPL-3.0-only",
   "engines": {
-    "node": ">=12"
+    "node": ">=14"
   },
   "dependencies": {
     "async": "~2.6.3",
@@ -25,19 +25,19 @@
     "kleur": "~4.1.4",
     "lodash": "~4.17.21",
     "node-fetch": "~2.6.1",
-    "pa11y": "~6.1.0",
+    "pa11y": "~6.2.3",
     "protocolify": "~3.0.0",
     "puppeteer": "~9.1.1",
     "wordwrap": "~1.0.0"
   },
   "devDependencies": {
-    "eslint": "^7.27.0",
-    "mocha": "^8.4.0",
-    "mockery": "^2.1.0",
-    "nyc": "^15.1.0",
-    "pa11y-lint-config": "^2.0.0",
-    "proclaim": "^3.6.0",
-    "sinon": "^11.1.0"
+    "eslint": "~8.13.0",
+    "mocha": "~9.2.2",
+    "mockery": "~2.1.0",
+    "nyc": "~15.1.0",
+    "pa11y-lint-config": "~2.0.0",
+    "proclaim": "~3.6.0",
+    "sinon": "~11.1.0"
   },
   "main": "./lib/pa11y-ci.js",
   "bin": {
