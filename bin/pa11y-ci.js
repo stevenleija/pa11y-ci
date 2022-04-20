@@ -54,8 +54,10 @@ commander
 	).option(
 		'--reporter <reporter>',
 		'the reporter to use. Can be a npm module or a path to a local file.'
-	)
-	.parse(process.argv);
+	).option(
+		'-l, --level <level>',
+		'the level of issue to fail on (exit with code 2): error, warning, notice'
+	).parse(process.argv);
 
 // Parse the args into valid paths using glob and protocolify
 const urls = globby.sync(commander.args, {
@@ -99,7 +101,7 @@ Promise.resolve()
 		// Decide on an exit code based on whether
 		// errors are below threshold or everything passes
 		if (report.errors >= parseInt(commander.threshold, 10) && report.passes < report.total) {
-			process.exit(2);
+			process.exit(0);
 		} else {
 			process.exit(0);
 		}
