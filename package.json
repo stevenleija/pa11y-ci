@@ -5,14 +5,14 @@
   "keywords": [],
   "author": "Team Pa11y",
   "contributors": [
-    "Rowan Manning (https://rowanmanning.com/)"
+    "Rowan Manning (https://rowanmanning.com/)",
+    "Steven Leija (http://www.stevenleija.com/"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/pa11y/ci.git"
+    "url": "https://github.com/stevenleija/pa11y-ci-stevenleija.git"
   },
-  "homepage": "https://github.com/pa11y/ci",
-  "bugs": "https://github.com/pa11y/ci/issues",
+  "homepage": "https://github.com/stevenleija/pa11y-ci-stevenleija",
   "license": "LGPL-3.0-only",
   "engines": {
     "node": ">=14"
