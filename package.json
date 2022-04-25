@@ -3,7 +3,7 @@
   "version": "3.1.1",
   "description": "Pa11y CI is a CI-centric accessibility test runner, built using Pa11y",
   "keywords": [],
-  "author": "Team Pa11y",
+  "author": "Steven Leija",
   "contributors": [
     "Rowan Manning (https://rowanmanning.com/)",
     "Steven Leija (http://www.stevenleija.com/"
@@ -16,6 +16,9 @@
   "license": "LGPL-3.0-only",
   "engines": {
     "node": ">=14"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
     "async": "~2.6.4",
@@ -50,7 +53,8 @@
     "test-unit": "mocha --file test/unit/setup.test.js 'test/unit/**/*.test.js' --recursive",
     "test-coverage": "nyc --reporter=text --reporter=html mocha --file test/unit/setup.test.js 'test/unit/**/*.test.js' --recursive",
     "test-integration": "mocha --file test/integration/setup.test.js 'test/integration/**/*.test.js' test/integration/teardown.test.js --recursive --timeout 10000 --slow 5000",
-    "test": "npm run test-coverage && npm run verify-coverage && npm run test-integration"
+    "test": "npm run test-coverage && npm run verify-coverage && npm run test-integration",
+    "publish": "npm publish"
   },
   "files": [
     "bin",
