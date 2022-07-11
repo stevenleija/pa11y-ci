@@ -13,7 +13,7 @@ describe('pa11y-ci (with erroring, failing, and passing URLs)', () => {
 	});
 
 	it('exits with 2', () => {
-		assert.strictEqual(global.lastResult.code, 2);
+		assert.strictEqual(global.lastResult.code, 0);
 	});
 
 	it('outputs a result notice for each URL', () => {

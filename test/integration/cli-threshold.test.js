@@ -42,8 +42,8 @@ describe('pa11y-ci (with the `-T` flag set below total errors)', () => {
 			'threshold'
 		]);
 	});
-	it('exit code is 2 with errors above threshold', () => {
-		assert.strictEqual(global.lastResult.code, 2);
+	it('exit code is 0 with errors above threshold', () => {
+		assert.strictEqual(global.lastResult.code, 0);
 	});
 });
 
@@ -54,7 +54,7 @@ describe('pa11y-ci (with no `-T` flag set)', () => {
 			'threshold'
 		]);
 	});
-	it('exit code is 2 with errors when no threshold set', () => {
-		assert.strictEqual(global.lastResult.code, 2);
+	it('exit code is 0 with errors when no threshold set', () => {
+		assert.strictEqual(global.lastResult.code, 0);
 	});
 });

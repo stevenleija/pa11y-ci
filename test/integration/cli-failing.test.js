@@ -12,8 +12,8 @@ describe('pa11y-ci (with a single failing URL)', () => {
 		]);
 	});
 
-	it('exits with 2', () => {
-		assert.strictEqual(global.lastResult.code, 2);
+	it('exits with 0', () => {
+		assert.strictEqual(global.lastResult.code, 0);
 	});
 
 	it('outputs a result notice for each URL', () => {
@@ -41,7 +41,7 @@ describe('pa11y-ci (with multiple failing URLs)', () => {
 	});
 
 	it('exits with 2', () => {
-		assert.strictEqual(global.lastResult.code, 2);
+		assert.strictEqual(global.lastResult.code, 0);
 	});
 
 	it('outputs a result notice for each URL', () => {
