@@ -2,15 +2,13 @@
   "name": "pa11y-ci-stevenleija",
   "version": "3.2.0",
   "description": "Pa11y CI is a CI-centric accessibility test runner, built using Pa11y",
-  "keywords": [],
-  "author": "Steven Leija",
   "keywords": [
     "accessibility",
     "analysis",
     "cli",
     "report"
   ],
-  "author": "Team Pa11y",
+  "author": "Steven Leija",
   "contributors": [
     "Rowan Manning (https://rowanmanning.com/)",
     "Steven Leija (http://www.stevenleija.com/"
@@ -36,17 +34,17 @@
     "lodash": "~4.17.21",
     "node-fetch": "~2.7.0",
     "pa11y": "^7.0.0",
+    "pa11y-ci-reporter-html": "~6.0.2",
     "protocolify": "~3.0.0",
     "puppeteer": "^20.9.0",
-    "wordwrap": "~1.0.0",
-    "pa11y-ci-reporter-html": "~5.0.0"
+    "wordwrap": "~1.0.0"
   },
   "devDependencies": {
     "eslint": "^8.56.0",
     "mocha": "^10.3.0",
     "mockery": "^2.1.0",
-    "nyc": "^15.1.0",
     "np": "~7.6.2",
+    "nyc": "^15.1.0",
     "pa11y-lint-config": "^3.0.0",
     "proclaim": "^3.6.0",
     "sinon": "^17.0.1"
@@ -74,5 +72,6 @@
   "files": [
     "bin",
     "lib"
-  ]
+  ],
+  "packageManager": "yarn@4.1.1+sha256.f3cc0eda8e5560e529c7147565b30faa43b4e472d90e8634d7134a37c7f59781"
 }
