@@ -15,7 +15,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:stevenleija/pa11y-ci-stevenleija.git"
+    "url": "git+ssh://git@github.com/stevenleija/pa11y-ci-stevenleija.git"
   },
   "homepage": "https://github.com/stevenleija/pa11y-ci-stevenleija",
   "license": "LGPL-3.0-only",
@@ -51,7 +51,7 @@
   },
   "main": "./lib/pa11y-ci.js",
   "bin": {
-    "pa11y-ci": "./bin/pa11y-ci.js"
+    "pa11y-ci": "bin/pa11y-ci.js"
   },
   "scripts": {
     "lint": "eslint .",
