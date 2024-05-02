@@ -1,6 +1,6 @@
 {
   "name": "pa11y-ci-stevenleija",
-  "version": "3.3.0",
+  "version": "3.3.1",
   "description": "Pa11y CI is a CI-centric accessibility test runner, built using Pa11y",
   "keywords": [
     "accessibility",
